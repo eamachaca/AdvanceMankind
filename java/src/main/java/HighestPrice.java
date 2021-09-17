@@ -29,13 +29,7 @@ interface Highest {
 
 public class HighestPrice {
 
-    public static void main(String[] args) {
-
-        Item[] givens = new Item[15];
-        Random random = new Random();
-        for (int i = 0; i < 15; i++) {
-            givens[i] = new Item("" + i, random.nextDouble());
-        }
+    public static Double getHighest(Item[] givens) {
         System.out.println(Arrays.toString(givens));
         Highest highest = (a) -> {
             double max = Double.MIN_VALUE;
@@ -49,7 +43,19 @@ public class HighestPrice {
             }
             return aux;
         };
-        System.out.println(highest.highest(givens));
+        Item item = highest.highest(givens);
+        System.out.println(item);
+        return item.getPrice();
 
+    }
+
+    public static void main(String[] args) {
+
+        Item[] givens = new Item[15];
+        Random random = new Random();
+        for (int i = 0; i < 15; i++) {
+            givens[i] = new Item("" + i, random.nextDouble());
+        }
+        getHighest(givens);
     }
 }

@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class NearbyNumbers {
 
-    private static int[] nearbyNumbers(int[] givens) {//two integers number in array
+    public static int[] nearbyNumbers(int[] givens) {//two integers number in array
         int[] result = new int[2];
         int closeness = Integer.MAX_VALUE;
         for (int i = 0; i < givens.length; i++) {
@@ -11,8 +11,13 @@ public class NearbyNumbers {
                 int abs = Math.abs(givens[i] - givens[j]);
                 if (i != j && abs < closeness) {
                     closeness = abs;
-                    result[0] = givens[i];
-                    result[1] = givens[j];
+                    if (givens[i] < givens[j]) {
+                        result[0] = givens[i];
+                        result[1] = givens[j];
+                    } else {
+                        result[0] = givens[j];
+                        result[1] = givens[i];
+                    }
                 }
             }
         }

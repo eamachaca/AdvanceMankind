@@ -1,105 +1,99 @@
-# Título del Proyecto
+#AdvanceMankind 
+======
+##Data modeling (SQL) 
 
-_Acá va un párrafo que describa lo que es el proyecto_
+###Certain educational institution stores the information of its lecturers using a spreadsheet like the following: 
 
-## Comenzando 🚀
+###Propose a relational model based on this data that complies with a third normal form (3FN) and implement it using the relational database of your choice (MySQL, SQL Server, DB2, Oracle). Your database tables should contain audit fields (creation date, last update date, etc.) and those must be updated according to the operations performed on them. 
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+ ![Get SQL from it](./sql.png "SpreadSheet")
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+##Relational model (Diagram generated using the software of your choice) – 20 pts. 
 
+>Image on document. Peoples can to get that image from the SQL. With your prefer software for that.
 
-### Pre-requisitos 📋
+------
+##Database implementation (SQL file(s) used) – 10 pts. 
+> Inside the node project (node folder too) called `lecturers.sql`
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+------
+##Data handling (Node.js, Java) 
 
+###Use the previous exercise to design and implement a RESTful API to perform the following operations over the information stored in your database: 
+
+##         Create a new lecturer. 
+
+### * Read the information of an existing lecturer. 
+
+### * Update an existing lecturer. 
+
+### * Delete an existing lecturer. 
+
+### * Search lecturers’ information by lecturer name, address fields, assigned lectures, degrees, phone number and email. 
+
+### * Fetch the number of lecturers per state, per degree and per lecture assigned. 
+
+####Your implementation must be written for Node.js or Java and you can use the framework/package of your choice (Next.js, Express, http-server, Servlets, Spring Boot, HttpServer, etc.) 
+
+####Application (ZIP file containing all the files needed to run your project in a local environment) – 25 pts. 
+
+ 
+
+>Zipped called nodeProject.zip 
+
+------
+ 
+##Documentation (DOC, DOCX, PDF files with your application specification, you can also use API Development tools available online like RESTer, POSTMAN, Hoppscotch, Insomnia, Workato, Swagger, etc.) – 15 pts. 
+
+ 
+>With PostMan in: https://www.getpostman.com/collections/ac2f89251fd569e78050 
+
+ 
+======
+##Algorithms and programming basics (Java) 
+======
+ 
+
+###1. 	Write a program that given an array of integers, returns the two closest numbers between them and their index in the array – 15pts. 
+
+>I created NearbyNumbers.java 
+
+###2. 	Write a program that given a list of objects of type Item, returns the one Item with the highest price using a functional interface for your method implementation – 15pts. 
+```Java
+The Item class: 
+
+ public class Item {	 
+
+private String sku; 
+
+private Double price;	 
+
+public Item(String sku, Double price) { 
+
+    	this.sku = sku; 
+
+    	this.price = price; 
+
+}	 
+
+public String getSku() { 
+
+    	return sku; 
+
+}	 
+
+public Double getPrice() { 
+
+    	return price; 
+
+} 
+
+}
 ```
-Da un ejemplo
-```
-
-### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+>I created NearbyNumbers.java 
 
 
+###For each program provide the required JAVA files that must include your implementation and tests. 
+>All Project are in java project. (java folder too)
 
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+ 
